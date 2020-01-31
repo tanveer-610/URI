@@ -1,0 +1,52 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,c,max,maxx,maxxx;
+
+    scanf("%d %d %d",&a,&b,&c);
+
+    if(a>b && a>c)
+    {
+        max=a;
+        if(b>c)
+           {
+               maxx=b;
+               maxxx=c;
+           }
+         else
+         {
+             maxx=c;
+             maxxx=b;
+         }
+    }
+   else  if(b>a && b>c)
+    {
+        max=b;
+        if(a>c)
+           {
+               maxx=a;
+               maxxx=c;
+           }
+         else
+         {
+             maxx=c;
+             maxxx=a;
+         }
+    }
+     else  if(c>a && c>b)
+    {
+        max=c;
+        if(a>b)
+           {
+               maxx=a;
+               maxxx=b;
+           }
+         else
+         {
+             maxx=b;
+             maxxx=a;
+         }
+    }
+    printf("%d\n%d\n%d\n\n%d\n%d\n%d\n",maxxx,maxx,max,a,b,c);
+    return 0;
+}
