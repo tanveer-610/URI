@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+  int a[3]={3600,60,1};
+  int x,y,n,i;
+  scanf("%d",&n);
+
+  for(i=0;i<3;i++)
+  {
+    x=n/a[i];
+    y=n%a[i];
+    n=y;
+    if(i<2)
+        printf("%d:",x);
+    else
+        printf("%d",x);
+  }
+   printf("\n");
+ return 0;
+}
+
