@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+    int n,c=0,f=0,s=1,fibo;
+    scanf("%d",&n);
+    while(c<n)
+    {
+        if(c<=1)
+            fibo=c;
+        else
+        {
+            fibo=f+s;
+            f=s;
+            s=fibo;
+        }
+     if(c+1==n)
+     {
+           printf("%d\n",fibo);
+     }
+     else
+          printf("%d ",fibo);
+       c++;
+    }
+}
