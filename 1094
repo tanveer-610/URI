@@ -1,0 +1,37 @@
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+    int i,n,p,c=0,s=0,r=0,t;
+    double pc,pr,ps;
+    char ch[10];
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        scanf("%d",&p);
+        gets(ch);
+        if((strcmp(ch," C")==0))
+        {
+            c=c+p;
+        }
+        else  if((strcmp(ch," R")==0))
+        {
+            r=p+r;
+        }
+        else  if((strcmp(ch," S")==0))
+        {
+            s=p+s;
+        }
+
+    }
+    t=s+r+c;
+    pc=(c*100.0)/t;
+    pr=(r*100.0)/t;
+    ps=(s*100.0)/t;
+    printf("Total: %d cobaias\n",t);
+    printf("Total de coelhos: %d\nTotal de ratos: %d\nTotal de sapos: %d\n",c,r,s);
+    printf("Percentual de coelhos: %.2f %%\nPercentual de ratos: %.2f %%\nPercentual de sapos: %.2f %%\n",pc,pr,ps);
+
+}
+
