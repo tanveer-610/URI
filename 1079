@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    int i,n;
+    float wa[1000],a,b,c;
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+       scanf("%f%f%f",&a,&b,&c);
+        wa[i]=(((a*2)+(b*3)+(c*5))/10);
+    }
+    for(i=0;i<n;i++)
+    {
+        printf("%.1f\n",wa[i]);
+    }
+}
