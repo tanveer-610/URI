@@ -1,0 +1,22 @@
+#include<stdio.h>
+main()
+{
+    int a[]={10000,5000,2000,1000,500,200,100,50,25,10,5,1},i=0,b[12],p;
+    double input;
+    scanf("%lf",&input);
+    int in=input*100;
+    for(i=0;i<12;i++)
+    {
+        p=in/a[i];
+        in=in%a[i];
+        b[i]=p;
+    }
+    printf("NOTAS:\n");
+    for(i=0;i<=5;i++)
+        printf("%d nota(s) de R$ %.2lf\n",b[i],a[i]/100.00);
+
+    printf("MOEDAS:\n");
+    for(i=6;i<12;i++)
+        printf("%d moeda(s) de R$ %.2lf\n",b[i],a[i]/100.00);
+
+}
