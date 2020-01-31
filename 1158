@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+    int t,a,b,i,c=0,j,sum=0;
+    scanf("%d",&t);
+    for(i=1;i<=t;i++)
+    {
+        scanf("%d%d",&a,&b);
+        j=a;
+        while(j>=a)
+        {
+           if(j%2!=0)
+           {
+               sum=sum+j;
+               c++;
+               if(c==b)
+                break;
+           }
+           j++;
+        }
+        printf("%d\n",sum);
+      c=0;
+      sum=0;
+    }
+    return 0;
+}
