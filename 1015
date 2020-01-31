@@ -1,0 +1,10 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+   double X1,Y1,X2,Y2,z;
+   scanf("%lf %lf %lf %lf",&X1,&Y1,&X2,&Y2);
+   z=sqrt((X2-X1)*(X2-X1)+(Y2-Y1)*(Y2-Y1));
+   printf("%.4lf\n",z);
+    return 0;
+}
