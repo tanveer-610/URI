@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    int a[7]={100,50,20,10,5,2,1};
+    int N,temp,k,l,i;
+    scanf("%d",&N);
+    printf("%d\n",N);
+    if(N>0 && N<1000000)
+    {
+        temp=N;
+        for(i=0;i<7;i++)
+        {
+          k=temp/a[i];
+          l=temp%a[i];
+          temp=l;
+        printf("%d nota(s) de R$ %d,00\n",k,a[i]);
+        }
+
+    }
+
+
+}
