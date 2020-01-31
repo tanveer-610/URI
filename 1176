@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+    long long int n,first=0,sec=1,fibo;
+    int ca;
+    scanf("%d",&ca);
+
+    for(int i=1;i<=ca;i++,first=0,sec=1)
+    {
+        scanf("%lld",&n);
+           for(int j=0;j<=n;j++)
+           {
+               if(j<=1)
+               {
+                   fibo=j;
+               }
+               else
+               {
+                   fibo=first+sec;
+                   first=sec;
+                   sec=fibo;
+               }
+           }
+            printf("Fib(%lld) = %lld\n",n,fibo);
+    }
+    return 0;
+}
